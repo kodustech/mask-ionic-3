@@ -2,7 +2,7 @@
 
 **Import**
 ```javascript
-import {MaskInput} from '../directives/mask-input/mask-input';
+import { MaskInput } from 'mask-ioni-3';
 
 @NgModule({
   declarations: [
@@ -14,7 +14,21 @@ import {MaskInput} from '../directives/mask-input/mask-input';
 
 **How to use**
 ```html
-<ion-input type="text" placeholder="Date" [mask]="'00-00-0000'"></ion-input>
+Date
+<ion-input type="text" placeholder="Date" [mask]="'00/00/0000'"></ion-input>
+
+CPF
+<ion-input type="text" placeholder="cpf" [mask]="'000.000.000-00'"></ion-input>
+
+Vehicle - BR
+<ion-input type="text" placeholder="car" [mask]="'xxx-0000'"></ion-input>
+or
+<ion-input type="text" placeholder="car" [mask]="'AAA-0000'"></ion-input>
+or
+<ion-input type="text" placeholder="car" [mask]="'aaa-0000'"></ion-input>
+
+Any
+<ion-input type="text" placeholder="car" [mask]="'#####'"></ion-input>
 ```
 
 ```
