@@ -1,5 +1,9 @@
 # mask-ionic-3
 
+`npm instal --save mask-ioni-3`
+
+Yeh! IONI not IONIC
+
 **Import**
 ```javascript
 import { MaskInput } from 'mask-ioni-3';
