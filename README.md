@@ -1,4 +1,4 @@
-# mask-ionic-3
+# mask-ioni-3
 
 `npm instal --save mask-ioni-3`
 
