@@ -1,9 +1,9 @@
 # mask-ionic-3
 
 **Import**
-import {MaskInput} from '../directives/mask-input/mask-input'
-
 ```javascript
+import {MaskInput} from '../directives/mask-input/mask-input';
+
 @NgModule({
   declarations: [
     MyApp,
