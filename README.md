@@ -24,15 +24,18 @@ Date
 CPF
 <ion-input type="text" placeholder="cpf" [mask]="'000.000.000-00'"></ion-input>
 
+Telephone
+<ion-input type="tel" placeholder="tel" [mask]="'(00) 0000-0000'"></ion-input>
+ 
 Vehicle - BR
-<ion-input type="text" placeholder="car" [mask]="'xxx-0000'"></ion-input>
+<ion-input type="text" placeholder="car-plate" [mask]="'xxx-0000'"></ion-input>
 or
-<ion-input type="text" placeholder="car" [mask]="'AAA-0000'"></ion-input>
+<ion-input type="text" placeholder="car-plate" [mask]="'AAA-0000'"></ion-input>
 or
-<ion-input type="text" placeholder="car" [mask]="'aaa-0000'"></ion-input>
+<ion-input type="text" placeholder="car-plate" [mask]="'aaa-0000'"></ion-input>
 
 Any
-<ion-input type="text" placeholder="car" [mask]="'#####'"></ion-input>
+<ion-input type="text" placeholder="any" [mask]="'#####'"></ion-input>
 ```
 
 ```
