@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+        "experimentalDecorators": true,        
+        "noImplicitAny": true,
+        "module": "commonjs",
+        "target": "ES5",
+        "sourceMap": true,
+        "declaration": true,
+        "lib": ["es2015", "es2015.iterable", "dom"]
+    },
+    "files": [
+        "mask-input.ts"
+    ],
+    "exclude": [
+        "node_modules"
+    ]
+}

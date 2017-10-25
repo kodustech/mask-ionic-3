@@ -6,7 +6,7 @@ Yeh! IONI not IONIC
 
 **Import**
 ```javascript
-import { MaskInput } from 'mask-ioni-3';
+import { MaskInput } from 'mask-ioni-3/mask-input';
 
 @NgModule({
   declarations: [
@@ -42,3 +42,5 @@ a = lower case
 x = upper or lower case
 # = all characters
 ```
+
+I would be happy with your contribution :)
