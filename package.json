@@ -1,19 +1,19 @@
 {
   "name": "mask-ioni-3",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "author": "Italo Peruchi",
-  "homepage": "https://github.com/itlpps/mask-ionic-3",
+  "homepage": "https://github.com/ezDevs/mask-ionic-3",
   "private": false,
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/itlpps/mask-ionic-3"
+    "url": "git+https://github.com/ezDevs/mask-ionic-3"
   },
   "keywords": [
     "mask, ionic 3, input"
   ],
   "bugs": {
-    "url": "https://github.com/itlpps/mask-ionic-3/issues"
+    "url": "https://github.com/ezDevs/mask-ionic-3/issues"
   },
   "license": "MIT",
   "devDependencies": {
