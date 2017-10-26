@@ -21,6 +21,15 @@ export class MaskInput {
     if (event.target.value) {
       if(event.key == 'Backspace')
         return;
+      if(this.mask == 'document'){
+        event.target.value = this.setDocumentMask(event);  
+        return;
+      }
+      if(this.mask == 'telephone'){
+        event.target.value = this.setTelephoneMask(event);  
+        return;
+      }
+
       event.target.value = this.setMask(event, this.mask)
     }
   }
@@ -103,5 +112,47 @@ export class MaskInput {
       break;
     }
     return newValue;
+  }
+
+  private setDocumentMask(event:any) {
+    let value: string = event.target.value;
+    if(value.length > 14){
+      event.target.maxLength = 18;
+      return this.cnpj(value);      
+    } else {
+      event.target.maxLength = 15;
+      return this.cpf(value);
+    }   
+  }
+
+  private cnpj(v: string) {
+    v = v.replace(/\D/g, '')
+    v = v.replace(/^(\d{2})(\d)/, '$1.$2')
+    v = v.replace(/^(\d{2})\.(\d{3})(\d)/, '$1.$2.$3')
+    v = v.replace(/\.(\d{3})(\d)/, '.$1/$2')
+    v = v.replace(/(\d{4})(\d)/, '$1-$2')
+    return v
+  }
+
+  private cpf(v: string) {
+      v = v.replace(/\D/g, '')
+      v = v.replace(/(\d{3})(\d)/, '$1.$2')
+      v = v.replace(/(\d{3})(\d)/, '$1.$2')
+      v = v.replace(/(\d{3})(\d{1,2})$/, '$1-$2')
+      return v
+  }
+
+  private setTelephoneMask(event:any){
+    event.target.maxLength = 15;
+    return this.tel(event.target.value);
+  }
+
+  private tel(v:string){
+    v=v.replace(/\D/g,"");
+    v=v.replace(/^(\d{2})(\d)/g,"($1) $2");
+    v = v.length > 14 ?
+      v.replace(/(\d)(\d{5})$/,"$1-$2"):
+      v.replace(/(\d)(\d{4})$/,"$1-$2");
+    return v;
   }
 }
