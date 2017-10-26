@@ -35,7 +35,7 @@ Telephone - 8 or 9 digits
 <ion-input type="tel" placeholder="" [mask]="'telephone'"></ion-input>
 
 Document - CPF or CNPJ
-<ion-input type="text" placeholder="" [mask]="'telephone'"></ion-input>
+<ion-input type="text" placeholder="" [mask]="'document'"></ion-input>
 ```
 
 ```
@@ -45,7 +45,7 @@ a = lower case
 x = upper or lower case
 # = all characters
 telephone =  8 or 9 digits
-telephone = CPF or CNPJ
+document = CPF or CNPJ
 ```
 
 I would be happy with your contribution :)
