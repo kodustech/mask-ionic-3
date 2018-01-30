@@ -1,6 +1,6 @@
 # mask-ioni-3
 
-`npm instal --save mask-ioni-3`
+`npm install --save mask-ioni-3`
 
 Yeh! IONI not IONIC
 
